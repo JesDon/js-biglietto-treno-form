@@ -167,5 +167,7 @@ input:focus::placeholder{
 }
 
 #acquista{
+  display: flex;
+  justify-content: center;
   /* display: none; */
 }
