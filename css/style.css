@@ -6,19 +6,23 @@
 }
 
 body{
-  background-color: red;
+  background-color: #CC0033;
   font-family: 'Roboto', sans-serif;
 }
 
 .container{
-  max-width: 1180px;
+  max-width: 1000px;
   margin: auto;
 }
 
 h1{
   color: white;
   text-align: center;
-  margin: 40px 0 30px 0;
+  margin: 50px 0 20px 0;
+}
+
+h3{
+  padding: 8px 0;
 }
 /* /valori generici */
 
@@ -43,13 +47,13 @@ h1{
 }
 
 label{
-  color: red;
+  color: #CC0033;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 input, select{
-  border: 1px solid red;
+  border: 1px solid #CC0033;
   height: 30px;
   border-radius: 5px;
   text-align: center;
@@ -61,13 +65,13 @@ input::placeholder{
 }
 
 input:focus{
-  background-color: red;
+  background-color: #CC0033;
   border: 1px solid black;
   color: white;
 }
 
 input:focus, select:focus{
-  background-color: red;
+  background-color: #CC0033;
   color: white;
   border: 1px solid black;
 }
@@ -78,7 +82,7 @@ input:focus::placeholder{
 
 /* bottoni */
 .btn{
-  color: red;
+  color: #CC0033;
   font-size: 18px;
   font-weight: bold;
   padding: 8px;
@@ -97,4 +101,35 @@ input:focus::placeholder{
 /* /dati utente */
 
 /* dettagli biglietto */
+.biglietto-container{
+  padding: 20px;
+  background-color: white;
+  height: 180px;
+}
+
+.dati-biglietto{
+  display: flex;
+  height: 100px;
+}
+
+.nome-passeggero{
+  background-color: grey;
+  padding: 10px 0 0 20px;
+  width: 400px;
+}
+
+.offerta-biglietto{
+  width: 100%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 10px 0 0 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.offerta-biglietto th{
+  padding-right: 80px;
+  text-align: left;
+  padding-bottom: 10px;
+}
 /* /dettagli biglietto */
