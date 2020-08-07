@@ -26,19 +26,19 @@
             <!-- nome -->
             <div class="col">
               <label for="nome-label">Nome Cognome</label>
-              <input id="nome-id" type="text" placeholder="Inserisci il tuo nome">
+              <input id="nome" type="text" placeholder="Inserisci il tuo nome">
             </div>
             <!-- /nome -->
             <!-- km -->
             <div class="col">
               <label for="km-label">Km da percorrere</label>
-              <input id="km-id" type="number" placeholder="Inserisci i tuoi km">
+              <input id="km" type="number" placeholder="Inserisci i tuoi km">
             </div>
             <!-- /km -->
             <!-- eta' -->
             <div class="col">
-              <label for="fascia-eta-label">Fascia d'eta'</label>
-              <select id="fascia-eta-id" name="fascia-eta">
+              <label for="fascia-eta-label">Fascia d'et&agrave;</label>
+              <select id="fascia-eta" name="fascia-eta">
                 <option value="minorenne">Minorenne</option>
                 <option value="maggiorenne">Maggiorenne</option>
                 <option value="over65">Over 65</option>
@@ -50,8 +50,8 @@
 
           <!-- bottoni -->
           <div class="row">
-            <button class="btn" type="button" name="genera">Genera</button>
-            <button class="btn" type="button" name="annulla">Annulla</button>
+            <button id="genera" class="btn" type="button" name="genera">Genera</button>
+            <button id="annulla" class="btn" type="button" name="annulla">Annulla</button>
           </div>
           <!-- /bottoni -->
 
@@ -62,7 +62,7 @@
       <h1>IL TUO BIGLIETTO</h1>
 
         <!-- biglietto-container -->
-        <div class="biglietto-container">
+        <div id="biglietto-container" class="biglietto-container">
           <h3>DETTAGLIO PASSEGGERI</h3>
 
           <!-- dettagli-biglietto -->
@@ -88,10 +88,10 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td id="offerta">ciao</td>
-                    <td id="carrozza">ciao</td>
-                    <td id="codice-cp">ciao</td>
-                    <td id="costo">ciao</td>
+                    <td id="offerta"></td>
+                    <td id="carrozza"></td>
+                    <td id="codice-cp"></td>
+                    <td id="costo"></td>
                   </tr>
                 </tbody>
               </table>
@@ -103,6 +103,10 @@
 
         </div>
         <!-- /biglietto-container -->
+
+        <div id="acquista">
+          <button class="btn-acquista" type="button" name="button">Acquista</button>
+        </div>
 
     </div>
     <!-- /contenitore pagina -->

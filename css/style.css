@@ -18,11 +18,16 @@ body{
 h1{
   color: white;
   text-align: center;
-  margin: 50px 0 20px 0;
+  margin: 40px 0 20px 0;
 }
 
 h3{
   padding: 8px 0;
+}
+
+#nome-passeggero{
+  font-weight: bolder;
+  color: #CC0033;
 }
 /* /valori generici */
 
@@ -31,7 +36,7 @@ h3{
   background-color: white;
   border-radius: 10px;
   box-shadow: 2px 2px 5px #333;
-  padding: 20px;
+  padding: 30px;
 }
 
 .row{
@@ -87,7 +92,7 @@ input:focus::placeholder{
   font-weight: bold;
   padding: 8px;
   background-color: lightgrey;
-  margin: 50px 15px 10px 15px;
+  margin: 30px 15px 10px 15px;
   cursor: pointer;
   border-radius: 3px;
   border: 1px solid grey;
@@ -104,32 +109,63 @@ input:focus::placeholder{
 .biglietto-container{
   padding: 20px;
   background-color: white;
-  height: 180px;
+  display: none;
 }
 
 .dati-biglietto{
   display: flex;
-  height: 100px;
+  height: 80px;
 }
 
 .nome-passeggero{
   background-color: grey;
-  padding: 10px 0 0 20px;
-  width: 400px;
+  padding: 10px 0 0 10px;
+  width: 350px;
 }
 
 .offerta-biglietto{
   width: 100%;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
-  padding: 10px 0 0 20px;
+  padding: 10px 0 0 10px;
   display: flex;
   justify-content: flex-start;
 }
 
 .offerta-biglietto th{
-  padding-right: 80px;
-  text-align: left;
+  padding-right: 95px;
+  text-align: center;
   padding-bottom: 10px;
 }
+
+.offerta-biglietto td{
+  font-size: 15px;
+  color: #CC0033;
+}
+
+.show{
+  display: block;
+}
 /* /dettagli biglietto */
+
+
+.btn-acquista{
+  color: #CC0033;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  background-color: lightgrey;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid grey;
+}
+
+.btn-acquista:hover{
+  background-color: grey;
+  color: white;
+}
+
+#acquista{
+  /* display: none; */
+}
