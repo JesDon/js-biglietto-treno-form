@@ -155,7 +155,7 @@ input:focus::placeholder{
   font-weight: bold;
   padding: 5px;
   background-color: lightgrey;
-  margin: 10px;
+  margin-top: 20px;
   cursor: pointer;
   border-radius: 3px;
   border: 1px solid grey;
@@ -169,5 +169,4 @@ input:focus::placeholder{
 #acquista{
   display: flex;
   justify-content: center;
-  display: none;
 }
