@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Treno</title>
   </head>
@@ -17,29 +18,35 @@
 
       <!-- dati-utente -->
       <div class="dati-container">
+
         <div class="dati-utente">
 
-          <!-- dati utente -->
+          <!-- dati -->
           <div class="row">
-
             <!-- nome -->
             <div class="col">
-
+              <label for="nome-label">Nome Cognome</label>
+              <input id="nome-id" type="text" placeholder="Inserisci il tuo nome">
             </div>
             <!-- /nome -->
             <!-- km -->
             <div class="col">
-
+              <label for="km-label">Km da percorrere</label>
+              <input id="km-id" type="number" placeholder="Inserisci i tuoi km">
             </div>
             <!-- /km -->
             <!-- eta' -->
             <div class="col">
-
+              <label for="fascia-eta-label">Fascia d'eta'</label>
+              <select id="fascia-eta-id" name="fascia-eta">
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over65">Over 65</option>
+              </select>
             </div>
             <!-- /eta' -->
-
           </div>
-          <!-- /dati utente -->
+          <!-- /dati -->
 
           <!-- bottoni -->
           <div class="row">
